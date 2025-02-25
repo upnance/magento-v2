@@ -1,11 +1,5 @@
 ## Upnance_Gateway
 
-This is a major release - a remake of the old 2.x module (Upnance_Payment).
-
-The main reason for the remake was to fix two main issues of Upnance_Payment, namely:
-* Marking unsuccessful orders as "Authorized"
-* Making it not possible to cancel such orders
-
 We highly suggest to test it on a staging/development environment first.
 
 Tested on Magento 2.3 / 2.4 (PHP version up to 8.3).
