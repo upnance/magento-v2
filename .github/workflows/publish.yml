@@ -1,0 +1,37 @@
+name: Publish to Packagist
+
+on:
+  push:
+    branches:
+      - master
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          tools: composer
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Publish to Packagist
+        env:
+          PACKAGIST_USERNAME: ${{ secrets.PACKAGIST_USERNAME }}
+          PACKAGIST_API_TOKEN: ${{ secrets.PACKAGIST_API_TOKEN }}
+        run: |
+          curl -XPOST -u "$PACKAGIST_USERNAME:$PACKAGIST_API_TOKEN" \
+            https://packagist.org/api/update-package?username=$PACKAGIST_USERNAME \
+            -H "Content-Type: application/json" \
+            -d '{
+              "repository": "https://github.com/upnance/magento-v2"
+            }'
