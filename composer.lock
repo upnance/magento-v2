@@ -1,0 +1,108 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "42526c185160c3f73ac7e764415e32dc",
+    "packages": [
+        {
+            "name": "lib/curl",
+            "version": "0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrefigueira/Lib-Curl.git",
+                "reference": "b9980c40309a401782a84e262d757a1bf6b8b71a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrefigueira/Lib-Curl/zipball/b9980c40309a401782a84e262d757a1bf6b8b71a",
+                "reference": "b9980c40309a401782a84e262d757a1bf6b8b71a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Curl": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "André Figueira",
+                    "email": "andre.figueira@me.com",
+                    "homepage": "http://www.andrefigueira.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple cURL wrapper for PHP",
+            "homepage": "https://github.com/andrefigueira/Lib-Curl",
+            "keywords": [
+                "class",
+                "curl",
+                "http",
+                "php",
+                "wrapper"
+            ],
+            "support": {
+                "issues": "https://github.com/andrefigueira/Lib-Curl/issues",
+                "source": "https://github.com/andrefigueira/Lib-Curl/tree/0.5"
+            },
+            "time": "2014-05-01T10:27:38+00:00"
+        },
+        {
+            "name": "quickpay/quickpay-php-client",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/QuickPay/quickpay-php-client.git",
+                "reference": "3852949948e4370bb25e83b661a65229d1b4a1b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/QuickPay/quickpay-php-client/zipball/3852949948e4370bb25e83b661a65229d1b4a1b1",
+                "reference": "3852949948e4370bb25e83b661a65229d1b4a1b1",
+                "shasum": ""
+            },
+            "require": {
+                "lib/curl": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "php": ">=5.5.0",
+                "phpunit/phpunit": "4.8.*@dev",
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "QuickPay\\": "QuickPay/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP-SDK to communicate with the payment provider QuickPay",
+            "homepage": "https://github.com/QuickPay/quickpay-php-client",
+            "support": {
+                "issues": "https://github.com/QuickPay/quickpay-php-client/issues",
+                "source": "https://github.com/QuickPay/quickpay-php-client/tree/changelog"
+            },
+            "time": "2016-04-19T07:10:11+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

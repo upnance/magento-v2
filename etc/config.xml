@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <upnance_gateway>
+                <model>Upnance\Gateway\Model\Payment</model>
+                <title>Upnance Payment</title>
+                <active>1</active>
+                <testmode>0</testmode>
+                <order_status>pending_payment</order_status>
+                <payment_template>upnance_makepayment_email_template</payment_template>
+                <sort_order>1</sort_order>
+                <agreementid>ENTER YOUR AGREEMENT ID HERE</agreementid>
+                <cardtype>0</cardtype>
+                <sendmailorderconfirmation>1</sendmailorderconfirmation>
+                <sendmailorderconfirmationbefore>0</sendmailorderconfirmationbefore>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <autocapture_shipment>0</autocapture_shipment>
+                <autocapture>0</autocapture>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+                <apikey backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <private_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </upnance_gateway>
+            <upnance_klarna>
+                <model>Upnance\Gateway\Model\Klarna</model>
+                <title>Upnance Klarna</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>3</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_klarna>
+            <upnance_mobilepay>
+                <model>Upnance\Gateway\Model\MobilePay</model>
+                <title>Upnance MobilePay</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>4</sort_order>
+                <sort_order>4</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_mobilepay>
+            <upnance_vipps>
+                <model>Upnance\Gateway\Model\Vipps</model>
+                <title>Upnance Vipps</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>4</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_vipps>
+            <upnance_paypal>
+                <model>Upnance\Gateway\Model\PayPal</model>
+                <title>Upnance PayPal</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>4</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_paypal>
+            <upnance_viabill>
+                <model>Upnance\Gateway\Model\ViaBill</model>
+                <title>Upnance ViaBill</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>5</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_viabill>
+            <upnance_swish>
+                <model>Upnance\Gateway\Model\Swish</model>
+                <title>Upnance Swish</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>6</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_swish>
+            <upnance_trustly>
+                <model>Upnance\Gateway\Model\Trustly</model>
+                <title>Upnance Trustly</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>7</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <autocapture>0</autocapture>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_trustly>
+            <upnance_anyday>
+                <model>Upnance\Gateway\Model\Anyday</model>
+                <title>Upnance Anyday</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>8</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_anyday>
+            <upnance_applepay>
+                <model>Upnance\Gateway\Model\ApplePay</model>
+                <title>Upnance Apple Pay</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>9</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <autocapture>0</autocapture>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_applepay>
+            <upnance_googlepay>
+                <model>Upnance\Gateway\Model\GooglePay</model>
+                <title>Upnance Google Pay</title>
+                <active>0</active>
+                <order_status>pending_payment</order_status>
+                <sort_order>10</sort_order>
+                <handlestock>1</handlestock>
+                <allowspecific>0</allowspecific>
+                <autocapture>0</autocapture>
+                <transactionfee>0</transactionfee>
+                <specifytransactionfee>0</specifytransactionfee>
+                <can_use_checkout>1</can_use_checkout>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <can_cancel>1</can_cancel>
+                <can_refund>1</can_refund>
+                <group>upnance</group>
+            </upnance_googlepay>
+        </payment>
+    </default>
+</config>
