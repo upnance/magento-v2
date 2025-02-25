@@ -1,6 +1,5 @@
 {
   "name": "upnance/magento-v2",
-  "version": "1.0.0",
   "description": "Implements integration with the Upnance payment service provider.",
   "require": {
     "quickpay/quickpay-php-client": "1.0.*"
