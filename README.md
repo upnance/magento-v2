@@ -1,4 +1,4 @@
-## Upnance_Gateway
+## Upnance Gateway
 
 We highly suggest to test it on a staging/development environment first.
 
